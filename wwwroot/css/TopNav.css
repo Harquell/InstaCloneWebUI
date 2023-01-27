@@ -1,0 +1,1 @@
+nav{padding:0 2rem}nav ul{padding:0;margin:0;list-style:none;display:flex;flex-wrap:nowrap;overflow-x:auto;justify-content:space-between;font-size:1.4rem;gap:1rem}nav ul li{width:160px;text-align:center}nav ul button{color:var(--discreet-color)}nav ul button:hover,nav ul button:focus,nav ul button.active{color:var(--accent-color)}/*# sourceMappingURL=TopNav.css.map */

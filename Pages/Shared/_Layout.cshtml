@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - InstagramExerciceWebDesign</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/Layout.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/Icons.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/Buttons.css" asp-append-version="true"/>
+    @await RenderSectionAsync("Styles", false)
+</head>
+<body>
+
+<div id="app">
+    <header>
+        <a asp-page="Index">
+            <img src="~/images/header-logo.svg" alt="instagram header logo">
+        </a>
+        <button>
+            <i class="notification small"></i>
+        </button>
+    </header>
+    
+    @await RenderSectionAsync("Nav")
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer>
+        <ul>
+            <li>
+                <a asp-page="Index">
+                    <i class="home"></i>
+                </a>
+            </li>
+            <li>
+                <a asp-page="Privacy">
+                    <i class="search"></i>
+                </a>
+            </li>
+            <li class="top">
+                <a asp-page="Privacy">
+                    <button class="red shaded">
+                        <i class="add invert"></i>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a asp-page="Privacy">
+                    <i class="graphic"></i>
+                </a>
+            </li>
+            <li>
+                <a asp-page="Privacy">
+                    <img class="rounded icon" src="@Url.Content("images/avatar.png")"/>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</div>
+
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

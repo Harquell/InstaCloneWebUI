@@ -1,0 +1,28 @@
+nav {
+  padding: 0 2rem;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    gap: 1rem;
+
+    li {
+      width: 160px;
+      text-align: center;
+    }
+
+    button {
+      color: var(--discreet-color);
+
+      &:hover, &:focus, &.active {
+        color: var(--accent-color);
+      }
+    }
+  }
+}

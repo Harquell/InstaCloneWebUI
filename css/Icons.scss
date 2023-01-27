@@ -1,0 +1,56 @@
+i {
+  height: 3rem;
+  width: 3rem;
+  display: inline-block;
+  background-size: cover;
+
+  &.small {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  &:hover, &:focus {
+    filter: invert(65%) sepia(59%) saturate(763%) hue-rotate(312deg) brightness(98%) contrast(98%);
+  }
+
+  &.accent {
+    filter: invert(65%) sepia(59%) saturate(763%) hue-rotate(312deg) brightness(98%) contrast(98%);
+
+    &:hover, &:focus {
+      filter: invert(100%);
+    }
+  }
+
+  &.invert {
+    filter: invert(100%);
+
+    &:hover, &:focus {
+      filter: none;
+    }
+  }
+
+  &.notification {
+    background-image: url("/icons/notifications.svg");
+  }
+  &.home {
+    background-image: url("/icons/home.svg");
+  }
+  &.graphic {
+    background-image: url("/icons/graphic.svg");
+  }
+  &.search {
+    background-image: url("/icons/search.svg");
+  }
+  &.add {
+    background-image: url("/icons/add.svg");
+  }
+  &.more {
+    background-image: url("/icons/more.svg");
+  }
+  &.heart {
+    background-image: url("/icons/heart.svg");
+  }
+  &.chat-bubble {
+    background-image: url("/icons/chat-bubble.svg");
+  }
+}

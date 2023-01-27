@@ -1,0 +1,65 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+@section Styles
+{
+    <link rel="stylesheet" href="~/css/TopNav.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/Feed.css" asp-append-version="true"/>
+}
+
+@section Nav
+{
+    <nav>
+        <ul>
+            <li>
+                <button class="active">Feed</button>
+            </li>
+            <li>
+                <button>Stories</button>
+            </li>
+            <li>
+                <button>IGTV</button>
+            </li>
+            <li>
+                <button>Events</button>
+            </li>
+        </ul>
+    </nav>
+}
+
+<section class="feed">
+    <article class="post">
+        <div class="header">
+            <img class="avatar rounded" src="@Url.Content("images/avatar.png")"/>
+            <div class="author-infos">
+                <span class="username">User name</span>
+                <span class="location">San Francisco, CA</span>
+            </div>
+            <button>
+                <i class="more"></i>
+            </button>
+        </div>
+        <div class="content">
+            <img src="@Url.Content("images/post-example.jpeg")" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet facere quidem reiciendis? Cum cumque id labore magnam magni minima provident qui, reprehenderit veritatis voluptate. Consectetur ex, libero. Nesciunt, possimus sed.</p>
+        </div>
+        <div class="footer">
+            <span class="posted-time">10mn ago</span>
+            <div class="like-counter">
+                <button>
+                    <i class="heart small"></i>
+                </button>
+                <span>12K</span>
+            </div>
+            <div class="comment-counter">
+                <button>
+                    <i class="chat-bubble small"></i>
+                </button>
+                <span>12K</span>
+            </div>
+        </div>
+    </article>
+</section>
